@@ -24,4 +24,4 @@ function ensureAuthenticated(request, response, next){
   }
 }
 
-module.exports = ensureAuthenticated;
+module.exports = ensureAuthenticated
