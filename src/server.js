@@ -12,8 +12,9 @@ app.use(express.json())
 migrationsRun() 
 
 app.use(routes)
-app.use(cors)
+
 app.use('/files', express.static(uploadConfig.UPLOADS_FOLDER))
+app.use(cors())
 
 app.use(( error, request, response, next ) => {
   if(error instanceof AppError){

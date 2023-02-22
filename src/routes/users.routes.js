@@ -14,6 +14,7 @@ const UserAvatarController = require('../controllers/UserAvatarController')
 const usersController = new UsersController()
 const userAvatarController = new UserAvatarController()
 
+
 usersRoutes.post('/', usersController.create)
 usersRoutes.put('/', ensureAuthenticated, usersController.update)
 usersRoutes.patch(
