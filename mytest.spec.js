@@ -3,6 +3,6 @@ it("result of them sum of 2 + 2 must be 4", () => {
   const b = 2;
   const result = a + b;
 
-  expect(result).toEqual(5);
+  expect(result).toEqual(4);
   
 })
